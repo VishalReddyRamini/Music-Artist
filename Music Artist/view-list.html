@@ -1,0 +1,21 @@
+  <div class="form-group">
+          <input type="text" class="form-control" id="search" placeholder="search artists" ng-model="search" />
+        </div>
+        <!--<p>{{search}}</p>-->
+        <table class="table table-striped table-hover">
+          <tr>
+            <th>Artist Name</th>
+
+            <th>Genre</th>
+
+            <th>Rating</th>
+          </tr>
+          <tr ng-repeat="artist in artists|filter:search" ng-click="editItem($index)">
+            <td>{{artist.name}}</td>
+            <td>{{artist.genre}}</td>
+            <td>{{artist.rating}}</td>
+          </tr>
+        </table>
+        <div class="form-group">
+          <button ng-click='addArtist()' class="btn btn-primary">Add Artist</button>
+        </div>

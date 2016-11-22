@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link data-require="bootstrap@3.3.1" data-semver="3.3.1" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+    <script data-require="bootstrap@3.3.1" data-semver="3.3.1" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script data-require="angular.js@1.5.x" src="https://code.angularjs.org/1.5.8/angular.js" data-semver="1.5.8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+    <link rel="stylesheet" href="https://bootswatch.com/cyborg/bootstrap.min.css" />
+  </head>
+
+  <body >
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>
+            <span class="glyphicon glyphicon-headphones" style="color:blue"></span>
+
+ Music Artists</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div ng-view=""></div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+
+</html>
